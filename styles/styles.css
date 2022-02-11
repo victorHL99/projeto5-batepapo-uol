@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
     background-color: #F3F3F3;
+    overflow-x: hidden;
+
 }
 
 /* --------- HEADER ---------*/
@@ -41,6 +42,7 @@ main {
     width: 100vw;
     height: 100vh;
     margin-top: 106px;
+    margin-bottom: 100px;
     background-color: #F3F3F3;
     border-radius: 2px;
     display: block;
@@ -48,23 +50,24 @@ main {
 
 
 }
-
-main p {
-    margin-left: 8px;
+main > .container{
+    width: auto;
 }
-
-main>.enter-exit {
+.enter-exit {
     width: 100vw;
-    height: 40px;
+    min-height: 40px;
+    max-height: auto;
     margin-top: 4px;
+    border-radius: 2px;
     display: flex;
     align-items: center;
     background-color: #DCDCDC;
 }
 
-main>.normal {
+.public {
     width: 100vw;
-    height: 40px;
+    min-height: 40px;
+    max-height: auto;
     margin-top: 4px;
     display: flex;
     align-items: center;
@@ -72,15 +75,45 @@ main>.normal {
     background-color: #FFFFFF;
 }
 
-main>.private {
+.private {
     width: 100vw;
-    height: 63px;
+    min-height: 63px;
+    max-height: auto;
     margin-top: 4px;
     display: flex;
     align-items: center;
 
     background-color: #FFDEDE;
 }
+
+.horario {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 8px;
+    align-items: center;
+    color: red;
+}
+
+.nome {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+}
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    word-break: break-all;
+}
+
 
 
 
